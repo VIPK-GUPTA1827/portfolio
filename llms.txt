@@ -1,0 +1,63 @@
+# Vipin Gupta — Full-Stack Developer Portfolio
+> Mumbai-based developer building practical MERN web applications, client dashboards, and automated Python tools. Open to internships and junior developer roles.
+
+## About
+- **Name:** Vipin Gupta
+- **Location:** Mumbai, India
+- **Education:** BSc Computer Science — Mumbai University
+- **Email:** dev.vipingupta@gmail.com
+- **GitHub:** https://github.com/VIPK-GUPTA1827
+- **LinkedIn:** https://www.linkedin.com/in/vipin-gupta-v2718
+- **Portfolio:** https://vipingupta-portfolio.netlify.app/
+- **Fiverr:** https://fiverr.com/users/vipk_1827
+
+## Skills
+- **Frontend:** React.js, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS
+- **Backend:** Node.js, Express.js, Python, FastAPI, REST APIs, WebSockets
+- **Database:** MongoDB, LocalStorage
+- **Auth:** Google OAuth 2.0, API key authentication
+- **Tools:** Git, GitHub, Vite, Vercel, Netlify, Postman
+
+## Projects
+
+### GigOra — Hyperlocal Freelance Marketplace
+- **URL:** https://gig-ora.vercel.app/
+- **GitHub:** https://github.com/VIPK-GUPTA1827/GigOra
+- **Stack:** MongoDB, Express.js, React 19, Node.js, Socket.io, Google OAuth
+- **Features:** Milestone escrow payments, real-time Socket.io chat, role separation (client/freelancer), Google OAuth authentication
+- **Status:** Active Development
+
+### ResumePro Builder — ATS Resume Builder
+- **URL:** https://resumepro-builder.vercel.app/
+- **GitHub:** https://github.com/VIPK-GUPTA1827/resumepro-builder
+- **Stack:** React.js, Vite, jsPDF, HTML5 Canvas
+- **Features:** Real-time multi-column preview, customizable layouts, instant client-rendered vector PDF download
+
+### Binance Trading Bot — Testnet Automated Trading
+- **GitHub:** https://github.com/VIPK-GUPTA1827/trading_bot
+- **Stack:** Python, FastAPI, Binance API
+- **Features:** Automated Testnet order execution, HMAC-SHA256 request signing, historical backtesting, FastAPI order tracking dashboard
+
+### InvoiciFly (BillCraft) — Billing Tool
+- **URL:** https://billcraft-nu.vercel.app/
+- **GitHub:** https://github.com/VIPK-GUPTA1827/billcraft
+- **Stack:** JavaScript, HTML5, CSS3, Chart.js, LocalStorage
+- **Features:** Offline-first storage, Chart.js revenue analytics, currency conversion, printable receipts
+
+### Vortex Digital — Agency Concept
+- **URL:** https://vortex-custom.netlify.app/
+- **GitHub:** https://github.com/VIPK-GUPTA1827/vortex-custom
+- **Stack:** HTML5, CSS3, JavaScript
+- **Features:** Responsive project gallery, interactive service price calculator
+
+### Studio Zero — Barbershop Concept
+- **URL:** https://studioo-zero.netlify.app/
+- **Stack:** HTML5, CSS3, JavaScript
+- **Features:** Service catalog, appointment request booking flow
+
+## Availability
+Open to internships and junior developer roles (MERN + Python automation). Also available for freelance frontend and dashboard projects. Rated 5.0★ on Fiverr.
+
+## Contact
+- **Email:** dev.vipingupta@gmail.com
+- **Response time:** Within 24 hours

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Directives -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Vipin Gupta - Resume</title>
+    <!-- Favicon: Coral VG badge -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23F26B5B'/><text x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23ffffff'>VG</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Floating Action Bar for Web View -->
+    <div class="action-bar no-print">
+        <div class="action-bar-container">
+            <span class="view-tag"><i class="fas fa-file-invoice"></i> Interactive Web Resume</span>
+            <div class="action-buttons">
+                <a href="../index.html" class="btn-back-portfolio">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+                <button onclick="window.print()" class="btn-print">
+                    <i class="fas fa-print"></i> Save as PDF / Print
+                </button>
+                <button id="download-pdf-btn" class="btn-print btn-download">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Container -->
+    <main class="resume-container">
+        <!-- 1. Header Section: Name & Contact -->
+        <header class="resume-header">
+            <div class="header-main">
+                <h1 class="candidate-name">Vipin Gupta</h1>
+                <p class="candidate-title">Full-Stack Developer (MERN) | Python & Automation</p>
+            </div>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Mumbai, Maharashtra, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:dev.vipingupta@gmail.com">dev.vipingupta@gmail.com</a>
+                </div>
+                <div class="contact-item links-row">
+                    <a href="https://vipingupta-portfolio.netlify.app" target="_blank" rel="noopener noreferrer" class="link-pill">
+                        <i class="fas fa-globe"></i> Portfolio
+                    </a>
+                    <a href="https://github.com/VIPK-GUPTA1827" target="_blank" rel="noopener noreferrer" class="link-pill">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/vipin-gupta-v2718" target="_blank" rel="noopener noreferrer" class="link-pill">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://fiverr.com/users/vipk_1827" target="_blank" rel="noopener noreferrer" class="link-pill">
+                        <i class="fas fa-briefcase"></i> Fiverr
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. & 3. Education & Skills Top Grid -->
+        <div class="resume-top-grid">
+            <!-- 2. Education Section -->
+            <section class="resume-section section-education">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-card">
+                    <div class="edu-header">
+                        <h3 class="degree">BSc in Computer Science</h3>
+                        <span class="timeline">2025 – Present</span>
+                    </div>
+                    <p class="institute">Mumbai University</p>
+                    <p class="location">Mumbai, Maharashtra, India</p>
+                </div>
+            </section>
+
+            <!-- 3. Technical Skills Section -->
+            <section class="resume-section section-skills">
+                <h2 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h2>
+                <div class="skills-compact-grid">
+                    <div class="skill-group">
+                        <span class="skill-label">Languages:</span>
+                        <span class="skill-text">JavaScript (ES6+), Python, HTML5, CSS3</span>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Frameworks & Libs:</span>
+                        <span class="skill-text">React.js, Node.js, Express.js, FastAPI, Chart.js</span>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Databases:</span>
+                        <span class="skill-text">MongoDB, LocalStorage</span>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Tools & Hosting:</span>
+                        <span class="skill-text">Git, GitHub, Vite, Vercel, Netlify, Postman</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 4. Projects Section (Placed prominently before freelance per student layout spec) -->
+        <section class="resume-section section-projects">
+            <h2 class="section-title"><i class="fas fa-code-branch"></i> Projects</h2>
+
+            <!-- Project 1: GigOra -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">GigOra — Freelance Marketplace</h3>
+                    <div class="project-links">
+                        <a href="https://gig-ora.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/VIPK-GUPTA1827/GigOra" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tech">MongoDB, Express.js, React 19, Node.js, Socket.io, Google OAuth 2.0</p>
+                <ul class="project-bullets">
+                    <li>Built a full-stack hyperlocal freelance platform with milestone-based escrow payments and real-time messaging.</li>
+                    <li>Integrated Google OAuth 2.0 with JWT authentication, bcrypt encryption, rate limiting, and HTTP security headers (helmet).</li>
+                    <li>Deployed production micro-architecture on Vercel (Frontend), Render (Backend), and MongoDB Atlas.</li>
+                </ul>
+            </article>
+
+            <!-- Project 2: ResumePro -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">ResumePro</h3>
+                    <div class="project-links">
+                        <a href="https://resumepro-builder.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/VIPK-GUPTA1827/resumepro-builder" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tech">React.js, Vite, jsPDF, HTML5, CSS Grid</p>
+                <ul class="project-bullets">
+                    <li>A web app that helps users create a resume and download it as a PDF.</li>
+                    <li>Designed an ATS-friendly layout with real-time editing and client-side vector A4 export.</li>
+                </ul>
+            </article>
+
+            <!-- Project 2: Binance Trading Bot -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">Binance Trading Bot</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/VIPK-GUPTA1827/trading_bot" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tech">Python, FastAPI, Binance Testnet API, HMAC-SHA256</p>
+                <ul class="project-bullets">
+                    <li>A Python project that sends automated orders on the Binance Testnet.</li>
+                    <li>Uses HMAC-SHA256 authenticated REST requests, SMA crossover signals, and transaction logs.</li>
+                </ul>
+            </article>
+
+            <!-- Project 3: BillCraft (InvoiciFly) -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">BillCraft (InvoiciFly)</h3>
+                    <div class="project-links">
+                        <a href="https://billcraft-nu.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/VIPK-GUPTA1827/billcraft" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tech">JavaScript, HTML5, CSS3, Chart.js, LocalStorage</p>
+                <ul class="project-bullets">
+                    <li>A billing app that saves invoice details in the browser and shows sales charts.</li>
+                    <li>Includes client records management, offline storage, and instant printable PDF invoices.</li>
+                </ul>
+            </article>
+
+            <!-- Project 4: Tiger Fitness -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">Tiger Fitness</h3>
+                    <div class="project-links">
+                        <a href="https://a8tiger-fitness.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tech">HTML5, CSS3, JavaScript, Responsive Design</p>
+                <ul class="project-bullets">
+                    <li>A gym website with class details, pricing and a booking form.</li>
+                    <li>Fully responsive layout optimized for mobile screens with clean appointment requests.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 5. Freelance Work Section -->
+        <section class="resume-section section-freelance">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Freelance Work</h2>
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">Freelance Web Developer</h3>
+                    <div class="project-links">
+                        <a href="https://fiverr.com/users/vipk_1827" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Fiverr Profile
+                        </a>
+                    </div>
+                </div>
+                <p class="project-tech">HTML5, CSS3, JavaScript, React.js</p>
+                <ul class="project-bullets">
+                    <li>Built web apps and websites for client projects on Fiverr.</li>
+                    <li>Delivered a responsive frontend website with fast performance and cross-browser support.</li>
+                    <li>Earned a 5.0★ rating from my first Fiverr client.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('download-pdf-btn').addEventListener('click', () => {
+            const element = document.querySelector('.resume-container');
+            const originalFontSize = document.documentElement.style.fontSize;
+            const originalShadow = element.style.boxShadow;
+            const originalBorder = element.style.border;
+            const originalPadding = element.style.padding;
+
+            // Compact mode for clean A4 single page export
+            document.documentElement.style.fontSize = '12.5px';
+            element.style.boxShadow = 'none';
+            element.style.border = 'none';
+            element.style.padding = '10px 16px';
+
+            const opt = {
+                margin:       [0.2, 0.2, 0.2, 0.2],
+                filename:     'Vipin_Gupta_Resume.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2.5, useCORS: true, letterRendering: true },
+                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            const resetStyles = () => {
+                document.documentElement.style.fontSize = originalFontSize;
+                element.style.boxShadow = originalShadow;
+                element.style.border = originalBorder;
+                element.style.padding = originalPadding;
+            };
+
+            html2pdf().set(opt).from(element).save().then(resetStyles).catch((err) => {
+                resetStyles();
+                console.error('Error generating PDF:', err);
+                alert('PDF download could not complete. You can also click "Save as PDF / Print" to save directly from your browser.');
+            });
+        });
+    </script>
+</body>
+</html>
