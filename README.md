@@ -4,7 +4,7 @@ My personal portfolio site. Live: **https://vipingupta-portfolio.netlify.app/**
 
 ![Preview](og-image.png)
 
-I'm a first-year BSc Computer Science student at Mumbai University and a full-stack developer (MERN & Python). I started coding about 2 years ago, mostly self-taught. This site shows the projects I've built so far.
+I'm a self-taught full-stack developer (MERN & Python) from Mumbai. I started coding about 2 years ago. This site shows the projects I've built so far.
 
 ## What's on the site
 

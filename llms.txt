@@ -4,7 +4,6 @@
 ## About
 - **Name:** Vipin Gupta
 - **Location:** Mumbai, India
-- **Education:** BSc Computer Science — Mumbai University
 - **Email:** dev.vipingupta@gmail.com
 - **GitHub:** https://github.com/VIPK-GUPTA1827
 - **LinkedIn:** https://www.linkedin.com/in/vipin-gupta-v2718
