@@ -182,14 +182,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     contactForm.reset();
                 } else {
                     feedbackTitle.textContent = 'Unable to Send';
-                    feedbackMessage.textContent = 'Something went wrong while submitting. Please email directly at dev.vipingupta@gmail.com.';
+                    feedbackMessage.textContent = 'Something went wrong while submitting. Please email directly at vipingupta.dev@outlook.com.';
                     btnBackForm.style.display = 'inline-block';
                 }
             })
             .catch(() => {
                 feedbackSpinner.style.display = 'none';
                 feedbackTitle.textContent = 'Connection Error';
-                feedbackMessage.textContent = 'Unable to send message. Please email me directly at dev.vipingupta@gmail.com.';
+                feedbackMessage.textContent = 'Unable to send message. Please email me directly at vipingupta.dev@outlook.com.';
                 btnBackForm.style.display = 'inline-block';
             });
         });

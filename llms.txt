@@ -4,7 +4,7 @@
 ## About
 - **Name:** Vipin Gupta
 - **Location:** Mumbai, India
-- **Email:** dev.vipingupta@gmail.com
+- **Email:** vipingupta.dev@outlook.com
 - **GitHub:** https://github.com/VIPK-GUPTA1827
 - **LinkedIn:** https://www.linkedin.com/in/vipin-gupta-v2718
 - **Portfolio:** https://vipingupta-portfolio.netlify.app/
@@ -58,5 +58,5 @@
 Open to internships and junior developer roles (MERN + Python automation). Also available for freelance frontend and dashboard projects. Rated 5.0★ on Fiverr.
 
 ## Contact
-- **Email:** dev.vipingupta@gmail.com
+- **Email:** vipingupta.dev@outlook.com
 - **Response time:** Within 24 hours

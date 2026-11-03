@@ -52,7 +52,7 @@ security.txt    RFC 9116 security disclosure policy
 
 ## Contact
 
-- Email: dev.vipingupta@gmail.com
+- Email: vipingupta.dev@outlook.com
 - LinkedIn: https://www.linkedin.com/in/vipin-gupta-v2718
 - GitHub: https://github.com/VIPK-GUPTA1827
 - Fiverr: https://fiverr.com/users/vipk_1827
