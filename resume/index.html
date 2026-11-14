@@ -6,7 +6,10 @@
     <!-- Security Directives -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Vipin Gupta - Resume</title>
+    <title>Vipin Gupta - Resume | Full-Stack Developer</title>
+    <meta name="description" content="Resume of Vipin Gupta, a self-taught full-stack developer in Mumbai. Skills and projects in React, Node.js and Python.">
+    <link rel="canonical" href="https://vipingupta-portfolio.netlify.app/resume/">
+    <meta name="robots" content="index, follow">
     <!-- Favicon: Coral VG badge -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23F26B5B'/><text x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23ffffff'>VG</text></svg>">
     <!-- Google Fonts -->
@@ -88,7 +91,7 @@
                     </div>
                     <div class="skill-group">
                         <span class="skill-label">Databases:</span>
-                        <span class="skill-text">MongoDB, LocalStorage</span>
+                        <span class="skill-text">MongoDB</span>
                     </div>
                     <div class="skill-group">
                         <span class="skill-label">Tools & Hosting:</span>
@@ -117,9 +120,9 @@
                 </div>
                 <p class="project-tech">MongoDB, Express.js, React 19, Node.js, Socket.io, Google OAuth 2.0</p>
                 <ul class="project-bullets">
-                    <li>Built a full-stack hyperlocal freelance platform with milestone-based escrow payments and real-time messaging.</li>
-                    <li>Integrated Google OAuth 2.0 with JWT authentication, bcrypt encryption, rate limiting, and HTTP security headers (helmet).</li>
-                    <li>Deployed production micro-architecture on Vercel (Frontend), Render (Backend), and MongoDB Atlas.</li>
+                    <li>Built a full-stack freelance platform for India with React, Node.js, Express and MongoDB. It has a demo milestone-payment flow and real-time chat with Socket.io.</li>
+                    <li>Added Google login and JWT-based authentication. Passwords are hashed with bcrypt, and the API uses rate limiting and helmet security headers.</li>
+                    <li>Deployed the frontend on Vercel, the backend on Render and the database on MongoDB Atlas. Demo only, no real users yet.</li>
                 </ul>
             </article>
 
@@ -139,7 +142,7 @@
                 <p class="project-tech">React.js, Vite, jsPDF, HTML5, CSS Grid</p>
                 <ul class="project-bullets">
                     <li>A web app that helps users create a resume and download it as a PDF.</li>
-                    <li>Designed an ATS-friendly layout with real-time editing and client-side vector A4 export.</li>
+                    <li>Live preview while editing, and A4 PDF export that runs in the browser with jsPDF.</li>
                 </ul>
             </article>
 
@@ -176,7 +179,7 @@
                 <p class="project-tech">JavaScript, HTML5, CSS3, Chart.js, LocalStorage</p>
                 <ul class="project-bullets">
                     <li>A billing app that saves invoice details in the browser and shows sales charts.</li>
-                    <li>Includes client records management, offline storage, and instant printable PDF invoices.</li>
+                    <li>Saves client details and invoices in the browser (LocalStorage), prints invoices as PDF and shows sales charts with Chart.js.</li>
                 </ul>
             </article>
 
@@ -192,8 +195,7 @@
                 </div>
                 <p class="project-tech">HTML5, CSS3, JavaScript, Responsive Design</p>
                 <ul class="project-bullets">
-                    <li>A gym website with class details, pricing and a booking form.</li>
-                    <li>Fully responsive layout optimized for mobile screens with clean appointment requests.</li>
+                    <li>A gym website with membership plans, trainer details and a free-trial pass form. It works on mobile screens.</li>
                 </ul>
             </article>
         </section>
@@ -203,18 +205,16 @@
             <h2 class="section-title"><i class="fas fa-briefcase"></i> Freelance Work</h2>
             <article class="project-card">
                 <div class="project-header">
-                    <h3 class="project-name">Freelance Web Developer</h3>
+                    <h3 class="project-name">Fiverr (1 completed order)</h3>
                     <div class="project-links">
                         <a href="https://fiverr.com/users/vipk_1827" target="_blank" rel="noopener noreferrer" class="project-link">
                             <i class="fas fa-external-link-alt"></i> Fiverr Profile
                         </a>
                     </div>
                 </div>
-                <p class="project-tech">HTML5, CSS3, JavaScript, React.js</p>
+                <p class="project-tech">HTML5, CSS3, JavaScript</p>
                 <ul class="project-bullets">
-                    <li>Built web apps and websites for client projects on Fiverr.</li>
-                    <li>Delivered a responsive frontend website with fast performance and cross-browser support.</li>
-                    <li>Earned a 5.0★ rating from my first Fiverr client.</li>
+                    <li>Completed one order on Fiverr: a casino game for a client. Got a 5-star review.</li>
                 </ul>
             </article>
         </section>
@@ -236,7 +236,7 @@
 
             const opt = {
                 margin:       [0.2, 0.2, 0.2, 0.2],
-                filename:     'Vipin_Gupta_Resume.pdf',
+                filename:     'Vipin-Gupta-Resume.pdf',
                 image:        { type: 'jpeg', quality: 0.98 },
                 html2canvas:  { scale: 2.5, useCORS: true, letterRendering: true },
                 jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
