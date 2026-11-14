@@ -483,6 +483,13 @@ h4 {
     margin-bottom: 18px;
 }
 
+.text-grad {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
 .wave {
     display: inline-block;
     transform-origin: 70% 70%;
