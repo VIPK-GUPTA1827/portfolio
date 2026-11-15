@@ -5,18 +5,19 @@
    ========================================================================== */
 
 :root {
-    --primary: #F26B5B;
-    --primary-dark: #E05342;
-    --primary-light: #FDEEEB;
-    --text-main: #252525;
-    --text-muted: #5C5852;
-    --text-subtle: #8A857D;
-    --bg-page: #FAF8F2;
-    --bg-card: #FFFFFF;
-    --border-color: #E8E4DC;
-    --shadow-sm: 0 1px 3px rgba(37, 37, 37, 0.05);
-    --shadow-md: 0 4px 12px rgba(37, 37, 37, 0.08);
-    --shadow-lg: 0 10px 24px rgba(37, 37, 37, 0.08);
+    --primary: #3e7151;
+    --primary-dark: #346044;
+    --primary-light: #eef7f1;
+    --accent-gold: #f7c948;
+    --text-main: #4a4540;
+    --text-muted: #6a645e;
+    --text-subtle: #8a847d;
+    --bg-page: #fff8e0;
+    --bg-card: #fffef8;
+    --border-color: #f0e6c8;
+    --shadow-sm: 0 1px 3px rgba(74, 69, 64, 0.05);
+    --shadow-md: 0 4px 12px rgba(74, 69, 64, 0.08);
+    --shadow-lg: 0 10px 24px rgba(74, 69, 64, 0.08);
 }
 
 /* Global Reset */
