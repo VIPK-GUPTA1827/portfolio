@@ -2071,3 +2071,23 @@ body { font-weight: 400; }
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
+
+/* 1. Circle ke peeche soft ambient shadow */
+.shape-bg {
+    filter: drop-shadow(0 16px 20px rgba(74, 69, 64, 0.20));
+}
+
+/* 2. Circle ke daayen taraf dots pattern (space filling accent) */
+.hero-visual::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: 80px;
+    width: 90px;
+    height: 90px;
+    z-index: 0;
+    background-image: radial-gradient(#8fbf9f 2.5px, transparent 2.5px);
+    background-size: 16px 16px;
+    opacity: 0.9;
+    pointer-events: none;
+}
