@@ -2032,21 +2032,21 @@ body { font-weight: 400; }
 .footer-socials a { background: var(--white); border: 1px solid var(--line); color: var(--ink); }
 .footer-socials a:hover, .hero-social a:hover { background: var(--grad); color: var(--ink); }
 
-/* ===== Palette 1: Sky & Peach ===== */
+/* ===== Option 2: Butter + Sage Green ===== */
 :root {
-    --bg: #eef6fd;
-    --white: #f7fbff;
-    --bg-soft: #e4f0fb;
-    --ink: #3a4b5e;
-    --ink-2: #4b5c6e;
-    --text: #5c6c7f;
-    --muted: #5c6c7f;
-    --line: rgba(58, 75, 94, .16);
-    --orange: #376da1;
-    --amber: #2e5c88;
-    --grad: linear-gradient(90deg, #ffb48a 0%, #ffb48a 100%);
-    --accent-border: #b57e60;
-    --accent-hover: #efa981;
+    --bg: #fff8e0;
+    --white: #fffef8;
+    --bg-soft: #fff3c9;
+    --ink: #4a4540;
+    --ink-2: #5c5651;
+    --text: #6a645e;
+    --muted: #6a645e;
+    --line: rgba(74, 69, 64, .16);
+    --orange: #3e7151;
+    --amber: #346044;
+    --grad: linear-gradient(90deg, #f7c948 0%, #f7c948 100%);
+    --accent-border: #a8872e;
+    --accent-hover: #e8bc43;
 }
 
 
