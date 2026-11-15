@@ -18,7 +18,7 @@
     --radius-sm: 12px;
     --shadow: 0 10px 30px rgba(17, 20, 40, 0.07);
     --shadow-lg: 0 24px 50px rgba(17, 20, 40, 0.12);
-    --font: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -1991,4 +1991,60 @@ h4 {
         opacity: 1;
         transform: none;
     }
+}
+
+
+/* ===== Fix pack: hero ko khula banao ===== */
+body { font-weight: 400; }
+.hero-container { grid-template-columns: 1.25fr 0.75fr; gap: 56px; }
+.hero-name {
+    font-size: clamp(2.3rem, 4.2vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.18;
+}
+.hero-role { margin-bottom: 28px; }
+.hero-desc { max-width: 560px; font-size: 1.15rem; line-height: 1.8; }
+.hero-visual { width: min(100%, 410px); margin-top: 40px; }
+@media (max-width: 900px) {
+    .hero-container { grid-template-columns: 1fr; gap: 48px; }
+    .hero-name { font-size: clamp(2.1rem, 8vw, 3rem); }
+}
+
+/* ===== Common block (paste once) ===== */
+.skip-nav, .btn-talk, .btn-dark, .btn-grad,
+.nav-links .nav-cta-mobile a.btn-talk {
+    background: var(--grad); color: var(--ink); border: 1.5px solid var(--accent-border);
+}
+.btn-grad:hover, .btn-talk:hover, .btn-dark:hover { background: var(--accent-hover); }
+.btn-ghost:hover { background: var(--bg-soft); color: var(--ink); }
+.text-grad, .stat-num span {
+    background: none; -webkit-text-fill-color: var(--orange); color: var(--orange);
+}
+.skill-group-title i { background: var(--bg-soft); color: var(--orange); }
+.contact-info-panel { background: var(--bg-soft); color: var(--text); }
+.contact-info-panel h3, .info-details a, .info-details > span:last-child,
+.footer-logo { color: var(--ink); }
+.info-icon { background: var(--white); border: 1px solid var(--line); color: var(--orange); }
+.info-label { color: var(--muted); }
+.info-details a:hover { color: var(--amber); }
+.footer { background: var(--bg-soft); color: var(--text); }
+.footer-socials a { background: var(--white); border: 1px solid var(--line); color: var(--ink); }
+.footer-socials a:hover, .hero-social a:hover { background: var(--grad); color: var(--ink); }
+
+/* ===== Palette 1: Sky & Peach ===== */
+:root {
+    --bg: #eef6fd;
+    --white: #f7fbff;
+    --bg-soft: #e4f0fb;
+    --ink: #3a4b5e;
+    --ink-2: #4b5c6e;
+    --text: #5c6c7f;
+    --muted: #5c6c7f;
+    --line: rgba(58, 75, 94, .16);
+    --orange: #376da1;
+    --amber: #2e5c88;
+    --grad: linear-gradient(90deg, #ffb48a 0%, #ffb48a 100%);
+    --accent-border: #b57e60;
+    --accent-hover: #efa981;
 }
