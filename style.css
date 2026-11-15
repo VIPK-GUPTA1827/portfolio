@@ -2062,10 +2062,10 @@ body { font-weight: 400; }
 }
 .hero-photo {
     clip-path: none;
-    -webkit-mask-image: radial-gradient(ellipse 43% 43% at 50% 57%, #000 99.5%, transparent 100%), linear-gradient(#000, #000);
-    mask-image: radial-gradient(ellipse 43% 43% at 50% 57%, #000 99.5%, transparent 100%), linear-gradient(#000, #000);
-    -webkit-mask-size: 100% 100%, 100% 57%;
-    mask-size: 100% 100%, 100% 57%;
+    -webkit-mask-image: radial-gradient(ellipse 42% 42% at 50% 56.25%, #000 99.5%, transparent 100%), linear-gradient(#000, #000);
+    mask-image: radial-gradient(ellipse 42% 42% at 50% 56.25%, #000 99.5%, transparent 100%), linear-gradient(#000, #000);
+    -webkit-mask-size: 100% 100%, 100% 56.25%;
+    mask-size: 100% 100%, 100% 56.25%;
     -webkit-mask-position: 0 0, 0 0;
     mask-position: 0 0, 0 0;
     -webkit-mask-repeat: no-repeat;
