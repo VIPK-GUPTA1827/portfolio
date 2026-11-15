@@ -2048,3 +2048,8 @@ body { font-weight: 400; }
     --accent-border: #b57e60;
     --accent-hover: #efa981;
 }
+
+
+.hero-name {
+    text-wrap: balance;
+}
