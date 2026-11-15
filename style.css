@@ -2056,7 +2056,10 @@ body { font-weight: 400; }
 
 
 /* Circle photo, head pops out above */
-.photo-shape { aspect-ratio: 1 / 1; }
+.photo-shape {
+    aspect-ratio: 1 / 1;
+    filter: drop-shadow(0 14px 28px rgba(74, 69, 64, 0.12));
+}
 .hero-photo {
     clip-path: none;
     -webkit-mask-image: radial-gradient(ellipse 43% 43% at 50% 57%, #000 99.5%, transparent 100%), linear-gradient(#000, #000);
