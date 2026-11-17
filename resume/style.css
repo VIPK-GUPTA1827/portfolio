@@ -126,11 +126,11 @@ body {
 
 /* Main Resume Container */
 .resume-container {
-    max-width: 860px;
-    margin: 75px auto 20px auto;
+    max-width: 820px;
+    margin: 68px auto 20px auto;
     background-color: var(--bg-card);
-    padding: 32px 38px;
-    border-radius: 12px;
+    padding: 24px 30px;
+    border-radius: 10px;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border-color);
 }
@@ -141,8 +141,8 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 2px solid var(--primary-light);
-    padding-bottom: 16px;
-    margin-bottom: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .header-main {
@@ -150,17 +150,17 @@ body {
 }
 
 .candidate-name {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.1rem;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.85rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     color: var(--text-main);
     line-height: 1.1;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .candidate-title {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--primary);
 }
@@ -169,15 +169,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 4px;
-    font-size: 0.82rem;
+    gap: 3px;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
 }
 
 .contact-item a {
@@ -190,27 +190,27 @@ body {
 }
 
 .contact-item i {
-    width: 14px;
+    width: 13px;
     text-align: center;
     color: var(--primary);
 }
 
 .links-row {
-    margin-top: 4px;
+    margin-top: 3px;
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
     justify-content: flex-end;
 }
 
 .link-pill {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     background-color: #faf8f2;
-    padding: 3px 8px;
-    border-radius: 16px;
-    font-size: 0.75rem;
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-size: 0.72rem;
     font-weight: 600;
     border: 1px solid var(--border-color);
     color: var(--text-main);
@@ -222,102 +222,60 @@ body {
     color: var(--primary);
 }
 
-/* 2. & 3. Education & Skills Top Grid */
-.resume-top-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin-bottom: 18px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--border-color);
-}
-
 /* Section styling */
 .resume-section {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
 }
 
 .section-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.95rem;
+    font-family: 'Figtree', sans-serif;
+    font-size: 0.86rem;
     font-weight: 700;
     color: var(--text-main);
     text-transform: uppercase;
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     border-left: 3px solid var(--primary);
-    padding-left: 8px;
-    margin-bottom: 10px;
+    padding-left: 6px;
+    margin-bottom: 6px;
 }
 
 .section-title i {
     color: var(--primary);
-    font-size: 0.9rem;
+    font-size: 0.82rem;
 }
 
-/* Education Card */
-.education-card {
-    background: #faf8f2;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 10px 14px;
-}
-
-.edu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 2px;
-}
-
-.degree {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--text-main);
-}
-
-.timeline {
-    font-size: 0.75rem;
-    color: var(--primary);
-    font-weight: 600;
-}
-
-.institute {
-    font-size: 0.85rem;
-    font-weight: 600;
+.summary-text {
+    font-size: 0.82rem;
     color: var(--text-muted);
-}
-
-.location {
-    font-size: 0.78rem;
-    color: var(--text-subtle);
+    line-height: 1.45;
 }
 
 /* Skills Compact Grid */
 .skills-compact-grid {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     background: #faf8f2;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 10px 14px;
-    font-size: 0.82rem;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 0.8rem;
 }
 
 .skill-group {
     display: flex;
     gap: 6px;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
 .skill-label {
     font-weight: 700;
     color: var(--text-main);
     white-space: nowrap;
-    min-width: 120px;
+    min-width: 140px;
 }
 
 .skill-text {
@@ -326,8 +284,8 @@ body {
 
 /* Project Cards */
 .project-card {
-    margin-bottom: 11px;
-    padding-bottom: 11px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
     border-bottom: 1px dashed #eeebe3;
 }
 
@@ -341,25 +299,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .project-name {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     font-weight: 700;
     color: var(--text-main);
 }
 
 .project-links {
     display: flex;
-    gap: 8px;
-    font-size: 0.75rem;
+    gap: 6px;
+    font-size: 0.72rem;
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 3px;
     color: var(--primary);
     font-weight: 600;
     text-decoration: none;
@@ -370,21 +328,21 @@ body {
 }
 
 .project-tech {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
     color: var(--text-subtle);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .project-bullets {
-    padding-left: 18px;
-    font-size: 0.85rem;
+    padding-left: 15px;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 
 .project-bullets li {
-    margin-bottom: 2px;
-    line-height: 1.45;
+    margin-bottom: 1px;
+    line-height: 1.38;
 }
 
 /* Print Styles */
