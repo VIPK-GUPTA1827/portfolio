@@ -8,7 +8,7 @@ I'm a self-taught full-stack developer (MERN & Python) from Mumbai. I started co
 
 ## What's on the site
 
-- **GigOra** – my main project, a freelance platform prototype for India (React 19, Node/Express, MongoDB, Socket.io, Tailwind CSS)
+- **IndGig (IG)** – my main project, a freelance platform prototype for India (React 19, Node/Express, MongoDB, Socket.io, Tailwind CSS)
 - **ResumePro**, **BillCraft** and a Python **trading bot** (testnet only)
 - 4 website concepts for businesses (Vortex Digital, Studio Zero, Starry HK Cafe, Tiger Fitness)
 - Skills, learning timeline, interactive resume, and a contact form

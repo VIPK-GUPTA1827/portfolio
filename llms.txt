@@ -19,7 +19,7 @@
 
 ## Projects
 
-### GigOra — Freelance Platform for India
+### IndGig (IG) — Freelance Platform for India
 - **URL:** https://gig-ora.vercel.app/
 - **GitHub:** https://github.com/VIPK-GUPTA1827/GigOra
 - **Stack:** MongoDB, Express.js, React 19, Node.js, Tailwind CSS, Socket.io, Google OAuth

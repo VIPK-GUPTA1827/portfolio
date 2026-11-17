@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Typing effect for the hero role
     const typedEl = document.getElementById('typed');
     if (typedEl) {
-        const roles = ['Full-Stack Developer', 'MERN & Python', 'Builder, GigOra'];
+        const roles = ['Full-Stack Developer', 'MERN & Python', 'Builder, IndGig'];
         if (!reduceMotion) {
             let roleIndex = 0;
             let charIndex = roles[0].length;
