@@ -20,7 +20,7 @@
 ## Projects
 
 ### IndGig (IG) — Freelance Platform for India
-- **URL:** https://gig-ora.vercel.app/
+- **URL:** https://indgig.vercel.app/
 - **GitHub:** https://github.com/VIPK-GUPTA1827/IndGig
 - **Stack:** MongoDB, Express.js, React 19, Node.js, Tailwind CSS, Socket.io, Google OAuth
 - **Features:** Demo milestone-payment flow (no real payments), real-time Socket.io chat, role separation (client/freelancer), Google OAuth authentication
