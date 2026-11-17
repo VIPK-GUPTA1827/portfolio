@@ -99,9 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Client-side rate limiting (60s cooldown)
+            // Client-side rate limiting (60s cooldown with safe localStorage)
             const COOLDOWN_MS = 60 * 1000;
-            const lastSentTime = localStorage.getItem('vipin_portfolio_contact_last_sent');
+            const KEY = 'vipin_portfolio_contact_last_sent';
+            const getLastSent = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+            const setLastSent = () => { try { localStorage.setItem(KEY, Date.now().toString()); } catch {} };
+
+            const lastSentTime = getLastSent();
             if (lastSentTime && (Date.now() - parseInt(lastSentTime, 10)) < COOLDOWN_MS) {
                 const waitSecs = Math.ceil((COOLDOWN_MS - (Date.now() - parseInt(lastSentTime, 10))) / 1000);
                 feedbackSpinner.style.display = 'none';
@@ -113,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Input validation
+            // Input validation with visual error feedback
             const nameInput = contactForm.querySelector('#name');
             const emailInput = contactForm.querySelector('#email');
             const messageInput = contactForm.querySelector('#message');
@@ -124,36 +128,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-            if (nameVal.length < 2 || nameVal.length > 80) {
-                if (nameInput) nameInput.focus();
-                return;
-            }
-            if (!emailRegex.test(emailVal) || emailVal.length > 120) {
-                if (emailInput) emailInput.focus();
-                return;
-            }
-            if (messageVal.length < 10 || messageVal.length > 2000) {
-                if (messageInput) messageInput.focus();
-                return;
+            function showError(input, msg) {
+                if (input) {
+                    input.setAttribute('aria-invalid', 'true');
+                    input.focus();
+                }
+                feedbackSpinner.style.display = 'none';
+                successIcon.style.display = 'none';
+                feedbackTitle.textContent = 'Check your details';
+                feedbackMessage.textContent = msg;
+                btnBackForm.style.display = 'inline-block';
+                formFeedback.classList.add('show');
             }
 
-            function sanitizeText(str) {
-                if (!str) return '';
-                return str
-                    .replace(/&/g, '&amp;')
-                    .replace(/</g, '&lt;')
-                    .replace(/>/g, '&gt;')
-                    .replace(/"/g, '&quot;')
-                    .replace(/'/g, '&#x27;')
-                    .replace(/\//g, '&#x2F;')
-                    .trim();
+            if (nameVal.length < 2) {
+                showError(nameInput, 'Please enter your name (at least 2 characters).');
+                return;
+            }
+            if (!emailRegex.test(emailVal)) {
+                showError(emailInput, 'Please enter a valid email address.');
+                return;
+            }
+            if (messageVal.length < 10) {
+                showError(messageInput, 'Please write a message with at least 10 characters.');
+                return;
             }
 
             const cleanPayload = {
                 access_key: contactForm.querySelector('input[name="access_key"]')?.value || '',
-                name: sanitizeText(nameVal),
+                name: nameVal,
                 email: emailVal,
-                message: sanitizeText(messageVal)
+                message: messageVal
             };
 
             feedbackSpinner.style.display = 'block';
@@ -173,8 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(async (response) => {
                 feedbackSpinner.style.display = 'none';
-                if (response.status === 200) {
-                    localStorage.setItem('vipin_portfolio_contact_last_sent', Date.now().toString());
+                const data = await response.json().catch(() => ({}));
+                if (response.ok && (data.success || response.status === 200)) {
+                    setLastSent();
                     successIcon.style.display = 'block';
                     feedbackTitle.textContent = 'Message Received!';
                     feedbackMessage.textContent = 'Thank you for reaching out. I will get back to you shortly.';
@@ -182,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     contactForm.reset();
                 } else {
                     feedbackTitle.textContent = 'Unable to Send';
-                    feedbackMessage.textContent = 'Something went wrong while submitting. Please email directly at vipingupta.dev@outlook.com.';
+                    feedbackMessage.textContent = data.message || 'Something went wrong while submitting. Please email directly at vipingupta.dev@outlook.com.';
                     btnBackForm.style.display = 'inline-block';
                 }
             })
@@ -249,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Typing effect for the hero role
     const typedEl = document.getElementById('typed');
     if (typedEl) {
-        const roles = ['Full-Stack Developer', 'MERN & Python', 'Founder, GigOra'];
+        const roles = ['Full-Stack Developer', 'MERN & Python', 'Builder, GigOra'];
         if (!reduceMotion) {
             let roleIndex = 0;
             let charIndex = roles[0].length;

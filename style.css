@@ -3,21 +3,23 @@
    ========================================================================== */
 
 :root {
-    --bg: #faf8f2;
-    --bg-soft: #f0ede6;
-    --white: #ffffff;
-    --ink: #0b0910;
-    --ink-2: #1c1a22;
-    --text: #5f6170;
-    --muted: #8a8c99;
-    --line: rgba(11, 9, 16, 0.12);
-    --orange: #f26b5b;
-    --amber: #f2994a;
-    --grad: linear-gradient(90deg,#f26b5b 0%,#f2994a 100%);
+    --bg: #fff8e0;
+    --bg-soft: #fff3c9;
+    --white: #fffef8;
+    --ink: #4a4540;
+    --ink-2: #5c5651;
+    --text: #6a645e;
+    --muted: #6b6d7a;
+    --line: rgba(74, 69, 64, 0.16);
+    --orange: #3e7151;
+    --amber: #346044;
+    --grad: linear-gradient(90deg, #f7c948 0%, #f7c948 100%);
+    --accent-border: #a8872e;
+    --accent-hover: #e8bc43;
     --radius: 20px;
     --radius-sm: 12px;
-    --shadow: 0 10px 30px rgba(17, 20, 40, 0.07);
-    --shadow-lg: 0 24px 50px rgba(17, 20, 40, 0.12);
+    --shadow: 0 10px 30px rgba(74, 69, 64, 0.07);
+    --shadow-lg: 0 24px 50px rgba(74, 69, 64, 0.12);
     --font: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -2031,24 +2033,6 @@ body { font-weight: 400; }
 .footer { background: var(--bg-soft); color: var(--text); }
 .footer-socials a { background: var(--white); border: 1px solid var(--line); color: var(--ink); }
 .footer-socials a:hover, .hero-social a:hover { background: var(--grad); color: var(--ink); }
-
-/* ===== Option 2: Butter + Sage Green ===== */
-:root {
-    --bg: #fff8e0;
-    --white: #fffef8;
-    --bg-soft: #fff3c9;
-    --ink: #4a4540;
-    --ink-2: #5c5651;
-    --text: #6a645e;
-    --muted: #6a645e;
-    --line: rgba(74, 69, 64, .16);
-    --orange: #3e7151;
-    --amber: #346044;
-    --grad: linear-gradient(90deg, #f7c948 0%, #f7c948 100%);
-    --accent-border: #a8872e;
-    --accent-hover: #e8bc43;
-}
-
 
 .hero-name {
     text-wrap: balance;

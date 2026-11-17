@@ -19,14 +19,14 @@
 
 ## Projects
 
-### GigOra — Hyperlocal Freelance Marketplace
+### GigOra — Freelance Platform for India
 - **URL:** https://gig-ora.vercel.app/
 - **GitHub:** https://github.com/VIPK-GUPTA1827/GigOra
-- **Stack:** MongoDB, Express.js, React 19, Node.js, Socket.io, Google OAuth
-- **Features:** Milestone escrow payments, real-time Socket.io chat, role separation (client/freelancer), Google OAuth authentication
-- **Status:** Active Development
+- **Stack:** MongoDB, Express.js, React 19, Node.js, Tailwind CSS, Socket.io, Google OAuth
+- **Features:** Demo milestone-payment flow (no real payments), real-time Socket.io chat, role separation (client/freelancer), Google OAuth authentication
+- **Status:** Working Prototype (demo for now, no real users yet)
 
-### ResumePro Builder — ATS Resume Builder
+### ResumePro Builder — Resume Builder
 - **URL:** https://resumepro-builder.vercel.app/
 - **GitHub:** https://github.com/VIPK-GUPTA1827/resumepro-builder
 - **Stack:** React.js, Vite, jsPDF, HTML5 Canvas
@@ -35,13 +35,13 @@
 ### Binance Trading Bot — Testnet Automated Trading
 - **GitHub:** https://github.com/VIPK-GUPTA1827/trading_bot
 - **Stack:** Python, FastAPI, Binance API
-- **Features:** Automated Testnet order execution, HMAC-SHA256 request signing, historical backtesting, FastAPI order tracking dashboard
+- **Features:** Automated Testnet order execution (not for real trading), HMAC-SHA256 request signing, historical backtesting, FastAPI order tracking dashboard
 
 ### InvoiciFly (BillCraft) — Billing Tool
 - **URL:** https://billcraft-nu.vercel.app/
 - **GitHub:** https://github.com/VIPK-GUPTA1827/billcraft
 - **Stack:** JavaScript, HTML5, CSS3, Chart.js, LocalStorage
-- **Features:** Offline-first storage, Chart.js revenue analytics, currency conversion, printable receipts
+- **Features:** Offline-first storage, Chart.js revenue analytics, saves data in the browser, printable receipts
 
 ### Vortex Digital — Agency Concept
 - **URL:** https://vortex-custom.netlify.app/
@@ -54,9 +54,18 @@
 - **Stack:** HTML5, CSS3, JavaScript
 - **Features:** Service catalog, appointment request booking flow
 
+### Starry HK Cafe — Restaurant Landing Concept
+- **URL:** https://starry-hk-cafe.netlify.app/
+- **Stack:** HTML5, CSS3, JavaScript
+- **Features:** Food menu showcase, responsive dining experience landing
+
+### Tiger Fitness — Gym Landing Concept
+- **URL:** https://a8tiger-fitness.netlify.app/
+- **Stack:** HTML5, CSS3, JavaScript
+- **Features:** Membership plans, trainer details, and free-trial pass form
+
 ## Availability
-Open to internships and junior developer roles (MERN + Python automation). Also available for freelance frontend and dashboard projects. Rated 5.0★ on Fiverr.
+Open to internships and junior developer roles (MERN + Python automation). Also available for freelance frontend and dashboard projects. 5-star review on 1 completed Fiverr order.
 
 ## Contact
 - **Email:** vipingupta.dev@outlook.com
-- **Response time:** Within 24 hours
